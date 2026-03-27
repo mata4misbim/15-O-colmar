@@ -6,300 +6,336 @@
     <title>15-O-Colmar</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
+  <body class="font-sans text-[#4A4A4A]">
     <header class="w-full h-16 bg-white">
       <nav class="w-full h-full px-6 flex items-center justify-between">
         <div class="h-full hidden md:flex items-center py-2">
           <img class="h-full" src="/images/ic-logo.svg" alt="logo" />
-          <h1 class="text-4xl font-semibold">
+          <h1 class="text-2xl lg:text-3xl font-bold">
             COLMAR<span class="text-gray-400">ACADEMY</span>
           </h1>
         </div>
-        <div class="">
-          <ul
-            class="hidden md:flex flex-row gap-4 font-normal text-gray-500 text-3xl"
-          >
-            <li><a href="#">On Campus</a></li>
-            <li><a href="#">Online</a></li>
-            <li><a href="#">or companies</a></li>
-            <li><a href="#">Sign In</a></li>
-          </ul>
-        </div>
+
+        <ul class="flex md:hidden w-full justify-around items-center h-full">
+          <li>
+            <a href="#"
+              ><img src="/images/ic-logo.svg" alt="icon1" class="w-8 h-8"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/images/ic-on-campus.svg" alt="icon2" class="w-8 h-8"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/images/ic-online.svg" alt="icon3" class="w-8 h-8"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/images/ic-login.svg" alt="icon4" class="w-8 h-8"
+            /></a>
+          </li>
+        </ul>
+
+        <ul
+          class="hidden md:flex flex-row gap-6 font-normal text-gray-500 text-lg lg:text-xl"
+        >
+          <li><a href="#" class="hover:underline">On Campus</a></li>
+          <li><a href="#" class="hover:underline">Online</a></li>
+          <li><a href="#" class="hover:underline">or companies</a></li>
+          <li><a href="#" class="hover:underline">Sign In</a></li>
+        </ul>
       </nav>
     </header>
-    <section class="bg-[#D8D8D8] py-8">
-      <div class="flex">
-        <div class="w-3/5 mx-6">
-          <img
-            class="w-full object-cover"
-            src="/images/banner.jpg"
-            alt="banner"
-          />
-        </div>
-        <div class="w-2/5 flex flex-col justify-center">
-          <div>
-            <h1 class="text-6xl font-bold text-[#4A4A4A]">
-              Learn Something <br />new everyday
-            </h1>
-            <p class="text-[#4A4A4A] font-semibold my-9 text-4xl">
-              Lorem ipsum dolor sit amet <br />consectetur adipisicing elit.
-            </p>
-            <button
-              class="bg-[#4A4A4A] text-white py-2 px-48 hover:bg-[#333] cursor-pointer text-2xl"
+
+    <main>
+      <section class="bg-[#D8D8D8] py-8 md:py-0">
+        <div class="flex flex-col md:flex-row items-center py-8">
+          <div class="w-full md:w-[60%] px-4 md:px-6 mb-6 md:mb-0">
+            <img
+              class="w-full h-auto object-cover"
+              src="/images/banner.jpg"
+              alt="banner"
+            />
+          </div>
+          <div class="w-full md:w-[40%] px-6 md:pr-12">
+            <h1
+              class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#4A4A4A]"
             >
-              <a href="#learning">Start Here</a>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="py-8">
-      <div class="flex">
-        <div class="w-3/5 mx-6">
-          <img
-            class="w-full object-cover"
-            src="/images/information-main.jpg"
-            alt="banner"
-          />
-          <h1 class="text-[#4A4A4A] font-bold text-6xl mt-8 mb-6">
-            It doesn't hurt to keep practicing
-          </h1>
-          <p class="text-3xl text-gray-700 mb-8">
-            "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
-            commodo lectus, nec consequat neque. Sed non accumsan urna.
-            Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
-            dolor consequat, tristique ligula."
-          </p>
-          <p class="text-gray-700 text-lg">
-            Emanuel, Sr Strategist at Hiring.com
-          </p>
-        </div>
-        <div class="w-2/5">
-          <div>
-            <div class="flex mx-4 mb-8 p-4 pt-0">
-              <div class="w-[35%] mr-4">
-                <img
-                  class="w-full object-cover h-auto"
-                  src="/images/information-orientation.jpg"
-                  alt="information-orientation"
-                />
-              </div>
-              <div class="w-[65%] flex flex-col justify-center">
-                <h1 class="font-bold text-gray-600 text-4xl">
-                  Orientation date
-                </h1>
-                <p class="text-gray-600 text-2xl my-4">
-                  Tue 10/11 & Wed 10/12: 8am-3pm
-                </p>
-                <p
-                  class="text-blue-500 font-medium text-xl hover:underline hover:cursor-pointer"
-                >
-                  Read more
-                </p>
-              </div>
-            </div>
-
-            <div class="flex mx-4 my-8 p-4">
-              <div class="w-[35%] mr-4">
-                <img
-                  class="w-full object-cover h-auto"
-                  src="/images/information-campus.jpg"
-                  alt="information-campus"
-                />
-              </div>
-              <div class="w-[65%] flex flex-col justify-center">
-                <h1 class="font-bold text-gray-600 text-4xl">Our campus</h1>
-                <p class="text-gray-600 text-2xl my-4">
-                  Find which campus is close by you
-                </p>
-                <p
-                  class="text-blue-500 font-medium text-xl hover:underline hover:cursor-pointer"
-                >
-                  Read more
-                </p>
-              </div>
-            </div>
-
-            <div class="flex mx-4 my-8 bg-[#D8D8D8] p-4">
-              <div class="w-[35%] mr-4">
-                <img
-                  class="w-full object-cover h-auto"
-                  src="/images/information-guest-lecture.jpg"
-                  alt="information-guest-lecture"
-                />
-              </div>
-              <div class="w-[65%] flex flex-col justify-center">
-                <h1 class="font-bold text-gray-600 text-4xl">Guest lecture</h1>
-                <p class="text-gray-600 text-2xl my-4">
-                  Join a keynote with Oliver Sack <br />
-                  about music in medical treatment
-                </p>
-                <p
-                  class="text-blue-500 font-medium text-xl hover:underline hover:cursor-pointer"
-                >
-                  Read more
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="learning" class="py-[32px] px-[72px] bg-[#D8D8D8]">
-      <div class="flex justify-center flex-col items-center">
-        <div class="mb-8">
-          <h1 class="text-4xl font-bold text-gray-700">Start learning</h1>
-        </div>
-        <div>
-          <div class="flex">
-            <div class="mb-8 mr-8">
-              <div>
-                <img
-                  src="/images/course-software.jpg"
-                  alt="Course: Software Engineering"
-                />
-              </div>
-              <div class="h-45 pt-4 pl-4 bg-white">
-                <h1 class="text-2xl font-bold text-gray-700">
-                  Software Engineering
-                </h1>
-                <p class="my-2 text-gray-400">COURSES</p>
-                <p class="text-gray-400">
-                  Web Development, Mobile <br />Development, iOT,APIs
-                </p>
-              </div>
-            </div>
-
-            <div class="mr-8">
-              <div>
-                <img
-                  src="/images/course-computer-art.jpg"
-                  alt="Course: Computer Art"
-                />
-              </div>
-              <div class="h-45 pt-4 pl-4 bg-white">
-                <h1 class="text-2xl font-bold text-gray-700">Computer Art</h1>
-                <p class="my-2 text-gray-400">COURSES</p>
-                <p class="text-gray-400">
-                  Imaging & Design, Web Design,<br />
-                  Motion Graphics & Visual Effects,<br />
-                  Computer Animation
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <div>
-                <img src="/images/course-design.jpg" alt="Course: Design" />
-              </div>
-              <div class="h-45 pt-4 pl-4 bg-white">
-                <h1 class="text-2xl font-bold text-gray-700">Design</h1>
-                <p class="my-2 text-gray-400">COURSES</p>
-                <p class="text-gray-400">
-                  User Experience Design, User <br />
-                  research, Visual Design
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex">
-          <div class="pr-8">
-            <div>
-              <img src="/images/course-data.jpg" alt="Course: Data Science" />
-            </div>
-            <div class="h-45 pt-4 pl-4 bg-white">
-              <h1 class="text-2xl font-bold text-gray-700">Data</h1>
-              <p class="my-2 text-gray-400">COURSES</p>
-              <p class="text-gray-400">
-                Data Science, Big Data, SQL, Data <br />Visualization
-              </p>
-            </div>
-          </div>
-
-          <div class="pr-8">
-            <div>
-              <img src="/images/course-business.jpg" alt="Course: Business" />
-            </div>
-            <div class="h-45 pt-4 pl-4 bg-white">
-              <h1 class="text-2xl font-bold text-gray-700">Business</h1>
-              <p class="my-2 text-gray-400">COURSES</p>
-              <p class="text-gray-400">
-                Product Development, Business <br />Development, Startup
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <div>
-              <img src="/images/course-marketing.jpg" alt="Course: Marketing" />
-            </div>
-            <div class="h-45 pt-4 pl-4 bg-white">
-              <h1 class="text-2xl font-bold text-gray-700">Marketing</h1>
-              <p class="my-2 text-gray-400">COURSES</p>
-              <p class="text-gray-400">
-                Analytics, Content Marketing, <br />
-                Mobile Marketing
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="pl-[24px] pt-[32px] pr-[14px] mb-[32px]">
-      <div class="flex justify-center flex-col items-center mb-[32px]">
-        <div class="mb-[32px]">
-          <h1 class="text-4xl font-bold text-gray-700">Thesis exhibit</h1>
-        </div>
-        <div class="flex">
-          <div class="mr-[24px] w-[60%]">
-            <video src="/videos/thesis.mp4"></video>
-            <h1 class="text-4xl font-bold text-gray-700 mt-[24px]">
-              Reimagine urban
+              Learn Something<br />new everyday
             </h1>
-            <p class="text-3xl text-gray-500 mt-[8px]">
+            <p class="text-xl md:text-2xl font-semibold mb-8">
+              Lorem ipsum dolor sit amet,<br />consectetur adipiscing elit.
+            </p>
+            <a
+              href="#learning"
+              class="inline-block w-full md:w-[80%] lg:w-[70%] text-center bg-[#4A4A4A] text-white py-4 md:py-3 px-12 text-lg font-bold hover:bg-[#333] transition-colors"
+            >
+              Start here
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-8 border-b border-gray-200">
+        <div class="flex">
+          <div class="w-3/5 mx-6">
+            <img
+              class="w-full object-cover"
+              src="/images/information-main.jpg"
+              alt="banner"
+            />
+            <h1 class="text-[#4A4A4A] font-bold text-6xl mt-8 mb-6">
+              It doesn't hurt to keep practicing
+            </h1>
+            <p class="text-3xl text-gray-700 mb-8">
               "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
               commodo lectus, nec consequat neque. Sed non accumsan urna.
               Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
               dolor consequat, tristique ligula."
             </p>
+            <p class="text-gray-700 text-lg">
+              Emanuel, Sr Strategist at Hiring.com
+            </p>
           </div>
-          <div class="w-[40%]">
-            <div class="flex items-center bg-[#D8D8D8] p-[16px] w-full">
-              <div class="mr-[16px]">
-                <img src="/images/thesis-fisma.jpg" alt="Thesis Exhibit" />
+          <div class="w-2/5">
+            <div>
+              <div class="flex mx-4 mb-8 p-4 pt-0">
+                <div class="w-[35%] mr-4">
+                  <img
+                    class="w-full object-cover h-auto"
+                    src="/images/information-orientation.jpg"
+                    alt="information-orientation"
+                  />
+                </div>
+                <div class="w-[65%] flex flex-col justify-center">
+                  <h1 class="font-bold text-gray-600 text-4xl">
+                    Orientation date
+                  </h1>
+                  <p class="text-gray-600 text-2xl my-4">
+                    Tue 10/11 & Wed 10/12: 8am-3pm
+                  </p>
+                  <p
+                    class="text-blue-500 font-medium text-xl hover:underline hover:cursor-pointer"
+                  >
+                    Read more
+                  </p>
+                </div>
               </div>
+
+              <div class="flex mx-4 my-8 p-4">
+                <div class="w-[35%] mr-4">
+                  <img
+                    class="w-full object-cover h-auto"
+                    src="/images/information-campus.jpg"
+                    alt="information-campus"
+                  />
+                </div>
+                <div class="w-[65%] flex flex-col justify-center">
+                  <h1 class="font-bold text-gray-600 text-4xl">Our campus</h1>
+                  <p class="text-gray-600 text-2xl my-4">
+                    Find which campus is close by you
+                  </p>
+                  <p
+                    class="text-blue-500 font-medium text-xl hover:underline hover:cursor-pointer"
+                  >
+                    Read more
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex mx-4 my-8 bg-[#D8D8D8] p-4">
+                <div class="w-[35%] mr-4">
+                  <img
+                    class="w-full object-cover h-auto"
+                    src="/images/information-guest-lecture.jpg"
+                    alt="information-guest-lecture"
+                  />
+                </div>
+                <div class="w-[65%] flex flex-col justify-center">
+                  <h1 class="font-bold text-gray-600 text-4xl">
+                    Guest lecture
+                  </h1>
+                  <p class="text-gray-600 text-2xl my-4">
+                    Join a keynote with Oliver Sack <br />
+                    about music in medical treatment
+                  </p>
+                  <p
+                    class="text-blue-500 font-medium text-xl hover:underline hover:cursor-pointer"
+                  >
+                    Read more
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="learning" class="py-[32px] px-[72px] bg-[#D8D8D8]">
+        <div class="flex justify-center flex-col items-center">
+          <div class="mb-8">
+            <h1 class="text-4xl font-bold text-gray-700">Start learning</h1>
+          </div>
+          <div>
+            <div class="flex">
+              <div class="mb-8 mr-8">
+                <div>
+                  <img
+                    src="/images/course-software.jpg"
+                    alt="Course: Software Engineering"
+                  />
+                </div>
+                <div class="h-45 pt-4 pl-4 bg-white">
+                  <h1 class="text-2xl font-bold text-gray-700">
+                    Software Engineering
+                  </h1>
+                  <p class="my-2 text-gray-400">COURSES</p>
+                  <p class="text-gray-400">
+                    Web Development, Mobile <br />Development, iOT,APIs
+                  </p>
+                </div>
+              </div>
+
+              <div class="mr-8">
+                <div>
+                  <img
+                    src="/images/course-computer-art.jpg"
+                    alt="Course: Computer Art"
+                  />
+                </div>
+                <div class="h-45 pt-4 pl-4 bg-white">
+                  <h1 class="text-2xl font-bold text-gray-700">Computer Art</h1>
+                  <p class="my-2 text-gray-400">COURSES</p>
+                  <p class="text-gray-400">
+                    Imaging & Design, Web Design,<br />
+                    Motion Graphics & Visual Effects,<br />
+                    Computer Animation
+                  </p>
+                </div>
+              </div>
+
               <div>
-                <h1 class="text-3xl font-bold text-gray-700 mb-[15px]">
-                  Fisma: Design and <br />Prototype
-                </h1>
-                <p class="text-gray-500 text-xl mt-[15px]">
-                  Designer showcase of new <br />
-                  prototype product
+                <div>
+                  <img src="/images/course-design.jpg" alt="Course: Design" />
+                </div>
+                <div class="h-45 pt-4 pl-4 bg-white">
+                  <h1 class="text-2xl font-bold text-gray-700">Design</h1>
+                  <p class="my-2 text-gray-400">COURSES</p>
+                  <p class="text-gray-400">
+                    User Experience Design, User <br />
+                    research, Visual Design
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="pr-8">
+              <div>
+                <img src="/images/course-data.jpg" alt="Course: Data Science" />
+              </div>
+              <div class="h-45 pt-4 pl-4 bg-white">
+                <h1 class="text-2xl font-bold text-gray-700">Data</h1>
+                <p class="my-2 text-gray-400">COURSES</p>
+                <p class="text-gray-400">
+                  Data Science, Big Data, SQL, Data <br />Visualization
                 </p>
               </div>
             </div>
 
-            <div class="flex items-center p-[16px] w-full">
-              <div class="mr-[16px]">
-                <img src="/images/thesis-now-and-then.jpg" alt="Now and then" />
-              </div>
+            <div class="pr-8">
               <div>
-                <h1 class="text-3xl font-bold text-gray-700 mb-[15px]">
-                  Now and then
-                </h1>
-                <p class="text-gray-500 text-xl mt-[15px]">
-                  Research study about New York
+                <img src="/images/course-business.jpg" alt="Course: Business" />
+              </div>
+              <div class="h-45 pt-4 pl-4 bg-white">
+                <h1 class="text-2xl font-bold text-gray-700">Business</h1>
+                <p class="my-2 text-gray-400">COURSES</p>
+                <p class="text-gray-400">
+                  Product Development, Business <br />Development, Startup
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <img
+                  src="/images/course-marketing.jpg"
+                  alt="Course: Marketing"
+                />
+              </div>
+              <div class="h-45 pt-4 pl-4 bg-white">
+                <h1 class="text-2xl font-bold text-gray-700">Marketing</h1>
+                <p class="my-2 text-gray-400">COURSES</p>
+                <p class="text-gray-400">
+                  Analytics, Content Marketing, <br />
+                  Mobile Marketing
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="pl-[24px] pt-[32px] pr-[14px] mb-[32px]">
+        <div class="flex justify-center flex-col items-center mb-[32px]">
+          <div class="mb-[32px]">
+            <h1 class="text-4xl font-bold text-gray-700">Thesis exhibit</h1>
+          </div>
+          <div class="flex">
+            <div class="mr-[24px] w-[60%]">
+              <video src="/videos/thesis.mp4"></video>
+              <h1 class="text-4xl font-bold text-gray-700 mt-[24px]">
+                Reimagine urban
+              </h1>
+              <p class="text-3xl text-gray-500 mt-[8px]">
+                "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
+                commodo lectus, nec consequat neque. Sed non accumsan urna.
+                Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
+                dolor consequat, tristique ligula."
+              </p>
+            </div>
+            <div class="w-[40%]">
+              <div class="flex items-center bg-[#D8D8D8] p-[16px] w-full">
+                <div class="mr-[16px]">
+                  <img src="/images/thesis-fisma.jpg" alt="Thesis Exhibit" />
+                </div>
+                <div>
+                  <h1 class="text-3xl font-bold text-gray-700 mb-[15px]">
+                    Fisma: Design and <br />Prototype
+                  </h1>
+                  <p class="text-gray-500 text-xl mt-[15px]">
+                    Designer showcase of new <br />
+                    prototype product
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-center p-[16px] w-full">
+                <div class="mr-[16px]">
+                  <img
+                    src="/images/thesis-now-and-then.jpg"
+                    alt="Now and then"
+                  />
+                </div>
+                <div>
+                  <h1 class="text-3xl font-bold text-gray-700 mb-[15px]">
+                    Now and then
+                  </h1>
+                  <p class="text-gray-500 text-xl mt-[15px]">
+                    Research study about New York
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer>
       <div
         class="flex justify-between px-[24px] pt-[16px] pb-8 border-t-1 border-solid border-gray-300"
